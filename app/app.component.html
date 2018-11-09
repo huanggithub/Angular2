@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" id="cs">
+  <h1>
+    Welcome!
+  </h1>
+</div>
+<!-- DOM操作 -->
+<p>我是P标签，点击我</p>
+<div #dia></div>
+<!-- 自定义单一属性指令 -->
+<!-- <p beauty>我是P标签，点击我</p> -->
+<!-- 自定义可编辑属性指令 -->
+<p [beauty]="'yellow'">我是P标签，点击我</p>
+
+<!-- 自定义结构指令 -->
+<p *myUnless="boolValue">true</p> 
+<p *myUnless="!boolValue">false</p>
+
