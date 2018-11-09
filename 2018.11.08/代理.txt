@@ -1,0 +1,2 @@
+代理浏览器监听API：patchEventTargetMethods
+给目标打补丁：patchMethod
