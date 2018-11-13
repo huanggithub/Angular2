@@ -1,0 +1,30 @@
+# Angular2-生命周期钩子
+angular2进阶
+包括：
+1.constructor
+2.ngOnChanges
+3.ngOnInit
+4.ngDoCheck
+5.ngAfterContentInit
+6.ngAfterContentChecked
+7.ngAfterViewInit
+8.ngAfterViewChecked
+9.ngOnDestroy
+constructor
+  初始化类,依赖注入
+ngOnChanges
+  在父组件初始化或者修改子组件的输入参数时调用
+ngOnInit
+  组件初始化执行，只执行一次，一般是处理一些复杂的初始化逻辑
+ngDoCheck
+  慎用！在每个变更周期中调用，比如鼠标onmouseover移动一下可能触发几十次，十分消耗性能
+ngAfterContentInit
+  在组件内容初始化之后调用，在第一次ngDoCheck之后调用，只调用一次
+ngAfterContentChecked
+  在组件每次检查内容发生变化之后调用，在ngAfterContentInit和ngDoCheck之后调用
+ngAfterViewInit
+  在组件相应的视图初始化之后调用，第一次ngAfterContentChecked之后调用只调用一次如：在子组件完全加载完毕之后父组件才能触发该钩子。
+ngAfterViewChecked
+  在父组件每次变更检查视图完毕之后子组件触发钩子
+ngOnDestroy
+  在组件销毁前调用（路由跳转触发），做一些清理工作，比如退订可观察对象移除事件处理器，以免导致内存泄露
