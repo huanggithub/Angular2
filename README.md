@@ -1,5 +1,5 @@
 # Angular2-生命周期钩子
-angular2进阶
+-angular2进阶
 包括：
 1.constructor
 2.ngOnChanges
